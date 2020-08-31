@@ -27,6 +27,13 @@
 					setcookie('uname',$username, time()+3600, '/');
 					header('location: home.php');
 			    }
+			    if($user='medicineShop')
+			    {
+			    	$_SESSION['status']  = "Ok";
+					setcookie('uname',$username, time()+3600, '/');
+					header('location: main.php');
+			    }
+
 			
 				
 			}
